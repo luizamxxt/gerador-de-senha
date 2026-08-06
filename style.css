@@ -110,7 +110,20 @@ body{
     bottom: 30px;
 }
 
+   .media{
+   background-color: gold;
+   height: 30px;
+   width: 66%;
+   position:relative;
+   bottom: 30px;
+   }
 
+.forte{
+    background-color: chartreuse;
+    height: 30px;
+}
+   
+ 
 
 
 @media screen and (min-width: 768px) {
