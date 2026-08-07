@@ -110,6 +110,16 @@ body{
     bottom: 30px;
 }
 
+  /*criar a barra media e forte*/
+  .media{
+        background-color: darkgoldenrod;
+        height: 30px;
+        width: 66%;
+        position: relative;
+        bottom: 30 px;
+
+  }
+
    .media{
    background-color: gold;
    height: 30px;
@@ -118,10 +128,13 @@ body{
    bottom: 30px;
    }
 
-.forte{
-    background-color: chartreuse;
-    height: 30px;
-}
+   @media screen and 
+    
+   }
+
+
+width: 
+ 
    
  
 
