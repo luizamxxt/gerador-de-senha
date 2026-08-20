@@ -1,2 +1,48 @@
 const numeroSenha = document.queryselector(".parametro-senha__texto")
-numeroSenha.textocontext = 5:
+numeroSenha.textContent = 5;
+
+tamanhosenha = 8 
+numerosenha. textoContent = tamanhosenha;
+
+const botoes = document.queryselectorAll('.parametro-senha_botao')
+
+
+botoes[0].onclick = diminuir;
+
+function diminuir(){
+    tamanhosenha--;
+    numerosenha. textContent = tamanhosenha;
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
