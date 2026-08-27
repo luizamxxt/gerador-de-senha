@@ -1,6 +1,8 @@
 const numeroSenha = document.querySelector('.parametro-senha__texto')
 const campoSenha = document. querySelector('#campo-senha')
 
+LETRAMAISCULAS
+
 campoSenha.value = 1230
 
 tamanhoSenha = 8
