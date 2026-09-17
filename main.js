@@ -1,43 +1,78 @@
-const numeroSenha = document.querySelector('.parametro-senha__texto')
-const campoSenha = document. querySelector('#campo-senha')
+const numeroSenha = document.querySelector(".parametro-senha__texto")
+const campoSenha =  document.querySelector("#campo-senha")
+const forcasenha = document.querySelector(".forca")
 
-LETRAMAISCULAS
 
-campoSenha.value = 1230
-// OPEN IN WEBVIEM  
- let LETRAMAISCULAS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
- // minusculas, numeros e simbolos
+campoSenha.value = "Aqui vai aparecer a senha."
+// OPEN IN WEBVIEW
+let letrasMaiusculas = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+//minusculas, numeros e simbolos
+
 
 tamanhoSenha = 8
 numeroSenha.textContent = tamanhoSenha;
 
-const botoes = document.querySelectorAll('.parametro-senha__botao') 
- // pega o 1°botao = -
- botoes[0].onclick = diminuir;
- // funcao diminuir
-function diminuir(){
-      // diminuir  de 1 em 1 e mostra na tela
-    tamanhoSenha--;
-    numeroSenha.textContent = tamanhoSenha;
-    gerasenha()
+
+
+
+const checkbox = document.querySelectorAll(".checkbox")
+
+
+for(let i = 0; i <  checkbox.lenght; i++){
+        checkbox[i].onclick = gerasenha;
 }
 
-// BOTAO DE AUMeNTAR 
+
+// checkbox[0] = maiusculas
+// checkbox[1] = maisculas
+// checkbox[2] = numeros
+// checkbox[3] = simbolos
 
 
-// FUNCAO DE CRIAR A SENHA ALEATÓRIO
-  gerasenha()
 
-  function gerasenha(){
-      let senha= ""
-      // LOOP - repetições
-      for (let i = 0; < tamanhoSenha; i++){
-         let numeroAleatório = Math.random() * 26;
-          numeroAleatório = Math, FLOOR (numeroAleatório)
-          senha = senha + let letrasMAISCULAS[numeroAleatório]
-      }
-         campoSenha.value = senha;
-  }
+const botoes = document.querySelectorAll(".parametro-senha__botao")
+//pega o 1 botão = -
+botoes [0].onclick = diminuir;
+
+
+// função diminuir
+function diminuir(){
+        //diminui de 1 em 1 e costra na na tela
+        tamanhoSenha--;
+        numeroSenha.textContent = tamanhoSenha;
+
+
+        gerasenha()
+}
+
+
+// BOTÃO DE AUMENTAR
+
+
+
+
+//FUNÇÂO DE CRIAR A SENHA ALEATÒRIA
+gerasenha()
+ 
+function gerasenha(){
+        let senha = ''
+        // LOOP - Repetições
+        for (let i = 0; < tamanhoSenha; i++){
+            let numeroAleatório = Math.random() * 26;
+            numeroAleatório = Math.floor(numeroAleatório)
+            senha = senha + let letrasMaiusculas[numeroAleatório]
+        }
+        campoSenha.value = senha;
+        classsificarSenha()
+}
+
+// funcão para classsificar a senhha 
+function classsificar(){
+  if(tamanhoSenha > 11)
+     forcasenha. classslist.add("media")
+
+}
+
  
 
 
