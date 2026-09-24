@@ -38,12 +38,16 @@ botoes [0].onclick = diminuir;
 // função diminuir
 function diminuir(){
         //diminui de 1 em 1 e costra na na tela
-        tamanhoSenha--;
+
+         if(tamanhoSenha > 0){
+       tamanhoSenha--;
         numeroSenha.textContent = tamanhoSenha;
+         gerasenha()
+        
+        }
+         }
 
-
-        gerasenha()
-}
+       
 
 
 // BOTÃO DE AUMENTAR
@@ -68,10 +72,15 @@ function gerasenha(){
 
 // funcão para classsificar a senhha 
 function classsificar(){
-  if(tamanhoSenha > 11)
-     forcasenha. classslist.add("media")
 
-}
+        forcasenha.classslist.remove("forte,"media, fraca, )
+  if(tamanhoSenha > 11){
+
+  }else if(tamanhoSenha < 7)
+   forcasenha. classslist.add("media")
+{else}
+ forcasenha.classslist.add('media')
+} 
 
  
 
