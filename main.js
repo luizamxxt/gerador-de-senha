@@ -11,10 +11,6 @@ let letrasMaiusculas = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 tamanhoSenha = 8
 numeroSenha.textContent = tamanhoSenha;
-
-
-
-
 const checkbox = document.querySelectorAll(".checkbox")
 
 
@@ -45,26 +41,35 @@ function diminuir(){
          gerasenha()
         
         }
-         }
-
-       
-
-
 // BOTÃO DE AUMENTAR
-
-
-
-
 //FUNÇÂO DE CRIAR A SENHA ALEATÒRIA
 gerasenha()
  
 function gerasenha(){
+
+let alfabeto =''
+//local que verifica qual checkbox foi clicada 
+//e adiciona no alfabeto
+if(checkbox{0}.checkbox){
+          alfabeto = alfabeto + letrasMaiusculas
+}
+if(checkbox{1}checkbox){
+        alfabeto = alfabeto + Letras
+}
+if(checkbox{2}checkbox){
+        alfabeto = alfabeto + numeroSenha
+}
+if(checkbox{3}checkbox){
+        alfabeto = alfabeto + simbolos
+
+}
+
         let senha = ''
         // LOOP - Repetições
         for (let i = 0; < tamanhoSenha; i++){
-            let numeroAleatório = Math.random() * 26;
+            let numeroAleatório = Math.random() * alfabeto.lenght;
             numeroAleatório = Math.floor(numeroAleatório)
-            senha = senha + let letrasMaiusculas[numeroAleatório]
+            senha = senha + alfabeto[numeroAleatório]
         }
         campoSenha.value = senha;
         classsificarSenha()
