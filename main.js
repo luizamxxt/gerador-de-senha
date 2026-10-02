@@ -8,23 +8,17 @@ campoSenha.value = "Aqui vai aparecer a senha."
 let letrasMaiusculas = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 //minusculas, numeros e simbolos
 
-
 tamanhoSenha = 8
 numeroSenha.textContent = tamanhoSenha;
-const checkbox = document.querySelectorAll(".checkbox")
-
+const checkbox = document.querySelectorAll(".checkbox input")
 
 for(let i = 0; i <  checkbox.lenght; i++){
         checkbox[i].onclick = gerasenha;
 }
-
-
 // checkbox[0] = maiusculas
 // checkbox[1] = maisculas
 // checkbox[2] = numeros
 // checkbox[3] = simbolos
-
-
 
 const botoes = document.querySelectorAll(".parametro-senha__botao")
 //pega o 1 botão = -
@@ -63,7 +57,6 @@ if(checkbox{3}checkbox){
         alfabeto = alfabeto + simbolos
 
 }
-
         let senha = ''
         // LOOP - Repetições
         for (let i = 0; < tamanhoSenha; i++){
@@ -74,13 +67,11 @@ if(checkbox{3}checkbox){
         campoSenha.value = senha;
         classsificarSenha()
 }
-
 // funcão para classsificar a senhha 
 function classsificar(){
 
-        forcasenha.classslist.remove("forte,"media, fraca, )
+ forcasenha.classslist.remove("forte,"media, fraca, )
   if(tamanhoSenha > 11){
-
   }else if(tamanhoSenha < 7)
    forcasenha. classslist.add("media")
 {else}
